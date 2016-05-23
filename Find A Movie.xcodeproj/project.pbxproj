@@ -14,6 +14,8 @@
 		11BDFF771CF3B037008BB579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BDFF751CF3B037008BB579 /* LaunchScreen.storyboard */; };
 		11BDFF821CF3B038008BB579 /* Find_A_MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDFF811CF3B038008BB579 /* Find_A_MovieTests.swift */; };
 		11BDFF8D1CF3B038008BB579 /* Find_A_MovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDFF8C1CF3B038008BB579 /* Find_A_MovieUITests.swift */; };
+		11BDFF9B1CF3B763008BB579 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDFF9A1CF3B763008BB579 /* SearchViewController.swift */; };
+		11BDFF9D1CF3C6D7008BB579 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDFF9C1CF3C6D7008BB579 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		11BDFF881CF3B038008BB579 /* Find A MovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find A MovieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BDFF8C1CF3B038008BB579 /* Find_A_MovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_A_MovieUITests.swift; sourceTree = "<group>"; };
 		11BDFF8E1CF3B038008BB579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BDFF9A1CF3B763008BB579 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		11BDFF9C1CF3C6D7008BB579 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		11BDFF6B1CF3B037008BB579 /* Find A Movie */ = {
 			isa = PBXGroup;
 			children = (
+				11BDFF9A1CF3B763008BB579 /* SearchViewController.swift */,
+				11BDFF9C1CF3C6D7008BB579 /* ResultsViewController.swift */,
 				11BDFF6C1CF3B037008BB579 /* AppDelegate.swift */,
 				11BDFF6E1CF3B037008BB579 /* ViewController.swift */,
 				11BDFF701CF3B037008BB579 /* Main.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BDFF9B1CF3B763008BB579 /* SearchViewController.swift in Sources */,
 				11BDFF6F1CF3B037008BB579 /* ViewController.swift in Sources */,
 				11BDFF6D1CF3B037008BB579 /* AppDelegate.swift in Sources */,
+				11BDFF9D1CF3C6D7008BB579 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
