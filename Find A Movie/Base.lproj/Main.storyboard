@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="1903" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie View Controller-->
         <scene sceneID="aJn-1U-PBo">
             <objects>
-                <viewController id="2Lp-5A-5wb" sceneMemberID="viewController">
+                <viewController id="2Lp-5A-5wb" customClass="MovieViewController" customModule="Find_A_Movie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XQP-z0-7iA"/>
                         <viewControllerLayoutGuide type="bottom" id="uKQ-c1-7Ki"/>
@@ -94,7 +94,35 @@
                     <view key="view" contentMode="scaleToFill" id="ob5-wl-ndO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1vZ-wN-gfS">
+                                <rect key="frame" x="20" y="45" width="560" height="255"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQU-WT-rrk">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b2y-E2-aq9">
+                                        <rect key="frame" x="0.0" y="21" width="560" height="213"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F61-FD-0yo">
+                                        <rect key="frame" x="0.0" y="234" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1vZ-wN-gfS" secondAttribute="trailing" id="4l7-Om-p0j"/>
+                            <constraint firstItem="1vZ-wN-gfS" firstAttribute="top" secondItem="XQP-z0-7iA" secondAttribute="bottom" constant="25" id="9AY-sE-6vT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1vZ-wN-gfS" secondAttribute="leading" id="KR5-ay-5wA"/>
+                            <constraint firstItem="uKQ-c1-7Ki" firstAttribute="top" secondItem="1vZ-wN-gfS" secondAttribute="bottom" constant="300" id="sgW-T6-78h"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9n-lS-dAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
